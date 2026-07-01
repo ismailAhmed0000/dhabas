@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import bagVideo from "../assets/bag-cinematic.mp4.asset.json";
 import { BrandsMarquee } from "./BrandsMarquee";
+
+const BAG_VIDEO_URL = "/bag-cinematic.mp4";
 
 const seg = (p: number, a: number, b: number) => {
   const t = Math.min(1, Math.max(0, (p - a) / (b - a)));
@@ -134,7 +135,7 @@ export function CinematicIntro() {
       <div className="sticky top-16 h-[calc(100svh-4rem)] w-full overflow-hidden bg-background">
         <video
           ref={videoRef}
-          src={bagVideo.url}
+          src={BAG_VIDEO_URL}
           className="pointer-events-none absolute h-0 w-0 opacity-0"
           muted
           playsInline
