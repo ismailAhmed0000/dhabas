@@ -1,0 +1,17 @@
+node_modules
+.output
+.wrangler
+.vinxi
+.nitro
+.tanstack
+dist
+dist-ssr
+*.log
+.env
+.env.*
+.git
+.gitignore
+Dockerfile
+.dockerignore
+railway.toml
+README.md
