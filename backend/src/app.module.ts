@@ -5,6 +5,7 @@ import { AdminModule } from './admin/admin.module';
 import { AuthModule } from './auth/auth.module';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 import { DatabaseModule } from './database/database.module';
+import { CustomOrdersModule } from './custom-orders/custom-orders.module';
 import { PreOrdersModule } from './pre-orders/pre-orders.module';
 import { ProductsModule } from './products/products.module';
 
@@ -15,6 +16,7 @@ import { ProductsModule } from './products/products.module';
     AuthModule,
     ProductsModule,
     PreOrdersModule,
+    CustomOrdersModule,
     AdminModule,
   ],
   providers: [{ provide: APP_GUARD, useClass: JwtAuthGuard }],

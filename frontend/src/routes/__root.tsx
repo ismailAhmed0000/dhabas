@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maison Sable | Branded Women's Handbags" },
+      { title: "Islandvoguemv | Branded Women's Handbags" },
       { name: "description", content: "Discover curated branded women's handbags. Timeless leather totes, crossbody bags, and shoulder bags sold through our Instagram boutique." },
-      { name: "author", content: "Maison Sable" },
-      { property: "og:title", content: "Maison Sable | Branded Women's Handbags" },
+      { name: "author", content: "Islandvoguemv" },
+      { property: "og:title", content: "Islandvoguemv | Branded Women's Handbags" },
       { property: "og:description", content: "Discover curated branded women's handbags. Timeless leather totes, crossbody bags, and shoulder bags sold through our Instagram boutique." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@maisonsable" },
+      { name: "twitter:site", content: "@islandvoguemv" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

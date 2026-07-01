@@ -82,5 +82,23 @@ export const preOrdersRelations = relations(preOrders, ({ one }) => ({
   }),
 }));
 
+export const customOrders = pgTable('custom_orders', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  customerName: text('customer_name').notNull(),
+  customerEmail: text('customer_email').notNull(),
+  customerPhone: text('customer_phone'),
+  instagramHandle: text('instagram_handle'),
+  description: text('description').notNull(),
+  referenceImageUrl: text('reference_image_url'),
+  status: preOrderStatusEnum('status').default('pending').notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+});
+
 export type Product = typeof products.$inferSelect;
 export type PreOrder = typeof preOrders.$inferSelect;
+export type CustomOrder = typeof customOrders.$inferSelect;
