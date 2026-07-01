@@ -1,6 +1,7 @@
 [build]
 builder = "RAILPACK"
-buildCommand = "npm ci && npm run build"
+# Railpack may cache node_modules; npm ci then fails with EBUSY on .vite — clean first.
+buildCommand = "rm -rf node_modules && npm ci && npm run build"
 
 [deploy]
 startCommand = "npm run start"
